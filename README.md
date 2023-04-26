@@ -1,2 +1,2 @@
 # Freelancer
-<h1 align="center"> Proyecto Familia </h1>
+<h1 align="center"> Proyecto Freelancer </h1>
