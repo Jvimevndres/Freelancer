@@ -1,14 +1,18 @@
+
 :root {
    --blanco: #ffffff;
    --oscuro: #212121;
    --primario: #ffc107;
    --secundario: #0097a7;
    --gris: #757575;
-}
+   --grisClaro: #DFE9F3;
 
+}
+/* Globales */
 html {
   font-size: 62.5%;
-  box-sizing: border-box;
+  box-sizing: border-box; /* HACK PARA BOXMODEL */
+
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -17,8 +21,15 @@ html {
 body {
   font-size: 16px; /*1 rem =*/
   font-family: 'Krub', sans-serif;
+  background-image: linear-gradient(to top, var(--grisClaro) 0%, var(--blanco)100%); /* Degradado de Fondo */
 }
-
+.sombras{
+  box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.48);  
+  background-color: var(--blanco);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+/* TipoGrafias */
 h1 {
   font-size: 3.8rem;
 }
@@ -79,6 +90,7 @@ background-color: var(--secundario);
   background-size: cover;
   height: 450px;
   position: relative;
+  margin-bottom: 2rem;
 }
 .contenido-hero{
   position: absolute;
@@ -119,3 +131,35 @@ background-color: var(--secundario);
       width: auto;
     }
 }
+/* Servicios */
+@media (min-width: 768px) {
+  .servicios {
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+  }
+   
+}
+.servicio{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.servicio h3{
+  color: var(--secundario);
+  font-weight: normal;
+}
+.servicio p{
+  line-height: 2;
+  text-align: center;
+}
+
+.servicio .iconos{
+  height: 15rem;
+  width: 15rem;
+  background-color: var(--primario);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
