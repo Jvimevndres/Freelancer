@@ -1,4 +1,4 @@
-# Proyecto de enseñanza de HTML y CSS básico
+# Proyecto HTML y CSS básico
 
 ## Descripción
 Este proyecto se dedica a enseñar los conceptos básicos de HTML y CSS. El objetivo es proporcionar una introducción a estas tecnologías para que puedan crear sus propias páginas web.
